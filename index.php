@@ -24,7 +24,7 @@ $projects = [
 <html lang="id">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kutanarilens</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -74,8 +74,8 @@ $projects = [
                 <h2>Proyek Saya</h2>
                 <?php foreach ($projects as $p):?>
                     <div class="card">
-                    <h3><?= $p['judul']; ?></h3>
-                    <p><?= $p['deskripsi']; ?></p>
+                    <h3><?php echo $p['judul']; ?></h3>
+                    <p><?php echo $p['deskripsi']; ?></p>
                     </div>
                     <?php endforeach; ?>
             </section>
@@ -83,6 +83,6 @@ $projects = [
         <footer>
             <p>&copy; 2025 Kutanarilens. Semua hak dilindungi</p>
         </footer>
-            <script src=" script.js"></script>
+            <script src="script.js"></script>
         </body>
         </html>
